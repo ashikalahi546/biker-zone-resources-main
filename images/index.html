@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- poppins google font start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- poppins google font end-->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primaryOrange: "#E76F51",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .poppins-font {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="poppins-font">
+    <header class="bg-[#264653] lg:h-[650px] py-3">
+      <div class="max-w-7xl mx-auto xl:px-5 px-8">
+        <nav class="flex justify-between text-white items-center">
+          <a class="text-xl sm:text-3xl font-bold" href="#">Alzaf</a>
+          <div class="hidden sm:block">
+            <ul class="flex gap-8 items-center">
+              <li class="hover:text-primaryOrange duration-150 delay-100">
+                <a href="#">Home</a>
+              </li>
+              <li class="hover:text-primaryOrange duration-150 delay-100">
+                <a href="#">Shop</a>
+              </li>
+              <li class="hover:text-primaryOrange duration-150 delay-100">
+                <a href="#">News</a>
+              </li>
+              <li class="hover:text-primaryOrange duration-150 delay-100">
+                <a href="#">Contact</a>
+              </li>
+              <li
+                class="bg-primaryOrange hover:bg-orange-500 duration-200 delay-100 px-6 py-2.5 rounded text-base font-medium cursor-pointer"
+              >
+                <a href="#">Login</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- bar start -->
+
+          <div class="sm:hidden block">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content -ml-14 z-[1] shadow bg-base-100 rounded-box text-black"
+              >
+                <li><a>Homepage</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>About</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- bar end -->
+        </nav>
+
+        <!-- hero section start -->
+        <section>
+          <div
+            class="flex md:flex-row flex-col justify-between items-center xl:py-14 sm:py-16 py-10 gap-10"
+          >
+            <div class="text-white flex-1 space-y-7">
+              <p class="text-sm">
+                Computer-controlled digital transistorized with electronic
+                advance
+              </p>
+              <h2 class="text-2xl lg:text-5xl font-medium">Honda CBR 300R</h2>
+              <p class="text-base">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+              <button
+                class="bg-primaryOrange hover:bg-orange-500 duration-200 delay-100 px-10 py-3 rounded text-base font-medium"
+              >
+                <a href="#">Purchase</a>
+              </button>
+            </div>
+            <div class="flex-1">
+              <img
+                src="../images/others/honda-cbr-300r-2-removebg-preview 1 (1).jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+        <!-- hero section end -->
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto xl:px-5 px-8 my-20">
+      <div class="text-center">
+        <h1 class="sm:text-4xl text-2xl font-semibold mb-2">Fetured Bikes In This Year</h1>
+        <p class="text-primaryOrange">Best bike collection</p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 sm:grid-cols-2 mt-10 gap-10 lg:gap-0 justify-items-center">
+            <img src="../images/others/feature-bike.png" alt="">
+            <img src="../images/others/Rectangle 4637 1 (1).jpg" alt="">
+            <img src="../images/others/feature-bike.png" alt="">
+            
+      </div>
+    </main>
+  </body>
+</html>
